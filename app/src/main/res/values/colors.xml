@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="green">#1F6307</color>
+    <!-- <color name="colorPrimary">#492983</color> -->
+   <!-- <color name="colorPrimary">#011501</color> -->
+     <color name="colorPrimary">#FF9800</color>
+     <color name="colorPrimaryLight">#9474CF</color>
+     <color name="colorPrimaryDark">#054E43</color>
+     <color name="colorAccent">#96BCB7</color>
+     <color name="colorGrey">#BDBDBD</color>
+     <color name="colorGreyLight">#EAE5E5</color>
+     <color name="colorGreyDart">#777777</color>
+     <color name="colorOrange">#CF5A0C</color>
+     <color name="colorPurple">#62138C</color>
+     <color name="colorGreenLight">#dcf8c6</color>
+     <color name="colorOrangeLight">#E8B975</color>
+     <color name="colorSadys">#D1F8F4</color>
+     <color name="colorGreenAcceeee">#20c65a</color>
+     <color name="colorBlackFull">#000000</color>
+     <color name="colorGreenStatus">#01b180</color>
+     <color name="colorGreyStatus">#c3c3c3</color>
+
+    <color name="brownish_grey">#606060</color>
+
+    <color name="nonoonoono">#606060</color>
+ </resources>

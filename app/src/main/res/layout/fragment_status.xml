@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".framents.StatusFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="4dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayoutAddStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp"
+            >
+
+            <!--para posisionar elementos encima de otro-->
+            <FrameLayout
+                android:layout_width="50dp"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/ic_persona"
+                    app:civ_circle_background_color="@color/colorGreyLight"/>
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="28dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_baseline_add"
+                    android:layout_gravity="bottom|right"
+                    app:civ_circle_background_color="@color/colorPrimary"/>
+
+            </FrameLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/myStatus"
+                     android:textColor="@color/black"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/addUpdateStatus"
+                    android:textColor="@color/colorGreyDart"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--nos muestre el cardview de los estados -->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recicleViewStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"/>
+
+        <!--nos muestre el cardview de los estados -->
+
+    </LinearLayout>
+
+</FrameLayout>

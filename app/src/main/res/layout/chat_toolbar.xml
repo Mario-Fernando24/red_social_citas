@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/imgViewBack"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="7dp"
+        android:src="@drawable/ic_arrow_back" />
+
+    <LinearLayout
+        android:id="@+id/profileIndividual"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImagUser"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/imgViewBack"
+        android:src="@drawable/ic_persona"
+        app:civ_circle_background_color="@color/white" />
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textViewUsernam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/circleImagUser"
+        android:maxLines="1"
+        android:text="Mario Muñoz"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/textViewOnline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewUsernam"
+        android:layout_toRightOf="@+id/circleImagUser"
+        android:maxLines="1"
+        android:text="en linea"
+        android:textColor="@color/white"
+        android:textSize="12dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+</RelativeLayout>

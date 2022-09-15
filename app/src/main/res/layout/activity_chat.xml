@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ChatActivity">
+
+    <include layout="@layout/action_bar_toolbar"/>
+
+    <!--la imagen expandida de fondo-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_message"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="55dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <!--para listar todos los mensajes que llegan desde la base de datos-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recicleViewMessage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="80dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <!--capturar el dato que le usuario ingrese -->
+            <EditText
+                android:id="@+id/editextMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Mensaje"
+                android:inputType="textImeMultiLine"
+                android:background="@drawable/custon_editt_ext"
+                android:padding="10dp"/>
+
+            <ImageView
+                android:id="@+id/imgViewSelectCamera"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_cameraaaa"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="10dp"/>
+
+
+            <ImageView
+                android:id="@+id/imgViewSelectFile"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_archivooo"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="38dp"/>
+
+        </FrameLayout>
+
+
+
+        <ImageView
+            android:id="@+id/imgViewSend"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@mipmap/ic_send"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
